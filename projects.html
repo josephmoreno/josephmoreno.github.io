@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet" type="text/css">
+        
+        <title>Projects / Joseph Daniel Moreno</title>
+        <link rel="stylesheet" href="./css/stylesheet.css" />
+    </head>
+    
+    <body>
+        <div id="page_wrapper">
+            
+            <div id="page_head">
+                
+                <img src="css/prof_pic.png" alt="Joseph's Profile Pic" width="200px" height="200px" id="prof_pic" />
+                
+                <h1 class="page_header">Joseph Daniel Moreno</h1>
+                <h2 class="page_subheader">Projects</h2>
+                
+                <div id="menu">
+                    
+                    <a id="resume_link" class="unhovered_menu_item" href="./index.html" onmouseover="hover_menu(this);" onmouseout="unhover_menu(this);">Resume</a>
+                    
+                    <a id="projects_link" class="unhovered_menu_item" href="./projects.html" onmouseover="hover_menu(this);" onmouseout="unhover_menu(this);">Projects</a>
+                    
+                    <a id="timeline_link" class="unhovered_menu_item" href="./timeline.html" onmouseover="hover_menu(this);" onmouseout="unhover_menu(this);">USF Timeline</a>
+                    
+                </div> <!-- menu end -->
+                
+            </div> <!-- page_head end -->
+            
+            <div class="body_content">
+                
+                <p class="section_title">
+                    CSE Virtual Assistant
+                </p>
+                
+                <p class="section_body">
+                    A conversational AI developed for Microsoft as my group senior project. <br><br>
+                    It was made specifically to converse with CSE students, providing advice and information about the CSE department. <br><br>
+                    We used Microsoft's bot framework, Azure, and C# to create it. <br><br>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gfOIH3GjugQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative; left: 320px;"></iframe>
+                    
+                    <br><br>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c0RjJDFJS1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vGaL0xOAAbQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative; left: 20px;"></iframe>
+                </p>
+                
+                <br>
+                
+                <p class="section_title">
+                    Chip-8 Emulator
+                </p>
+                
+                <p class="section_body">
+                    A personal project I took on to understand more about video game emulators. <br><br>
+                    A bulk of the code is translating the Chip-8's instructions to C++ syntax, but the Chip-8 is a good starting point for understanding emulators because of its small instruction set, consisting of 35 opcodes. (<a href="https://en.wikipedia.org/wiki/CHIP-8">Wikipedia article for the Chip-8</a>). <br><br>
+                    Keystroke input and audio-visual output is done with the SDL library. <br><br>
+                    GitHub repository <a href="https://github.com/josephmoreno/Chip-8_Emulator">here</a>. <br><br>
+                    
+                    <img src="./css/chip8_hidden.gif" alt="Chip-8 Pong" width="550px" height="310px" />
+                    
+                    <img src="./css/chip8_wipeoff.gif" alt="Chip-8 Wipeoff" width="550px" height="310px" style="position: relative; left: 20px;"/> <br><br>
+                    
+                    <img src="./css/chip8_pong.gif" alt="Chip-8 Pong" width="550px" height="310px" />
+                    
+                    <img src="./css/chip8_brix.gif" alt="Chip-8 Brix" width="550px" height="310px" style="position: relative; left: 20px;" />
+                </p>
+                
+                <br>
+                
+                <p class="section_title">
+                    Wi-Fi Pass Code System
+                </p>
+                
+                <p class="section_body">
+                    This is the final project I made for my embedded systems course. <br><br>
+                    The system authenticates 4 numbers that are input by a user. <br><br>
+                    The design uses an ESP8266 ESP-01 Wi-Fi module, a PIC18F45K50 MCU, and a 4 by 4 keypad. <br><br>
+                    The microcontroller processes the input from the keypad, sends it to the Wi-Fi module,
+                    and the Wi-Fi module displays the information in an HTML page.<br><br>
+                    GitHub repository
+                    <a href="https://github.com/josephmoreno/Coursework/tree/master/Embedded%20Systems/Final%20Project">here</a>. <br><br>
+                    
+                    Link to video and playlist <a href="https://www.youtube.com/watch?v=VX2fVoA899w&list=PLX-yZHfPJj2rzZP8t3bUQIOUt3RVGXsaW&index=6">here</a>. <br>
+                
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VX2fVoA899w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative; left: 320px;"></iframe>
+                </p>
+                
+                <br>
+                
+                <p style="display: inline-block; font-size: 16pt;">Project Report (PDF)</p>
+                <button type="button" class="collapse_switch">Expand</button>
+                <div class="collapsible_content">
+                    <iframe src="./files/ES%20Final%20Project.pdf" width="100%" height="925px"></iframe>
+                </div> <!-- collapsible_content end -->
+                
+                <br>
+                
+                <p class="section_title">
+                    FPGA Pattern Recognizer
+                </p>
+                
+                <p class="section_body">
+                    This is the final project my partner and I made for our FPGA course. <br><br>
+                    The design is meant to count the number of <i>completed</i> patterns it detects and it should also keep track of <i>active</i> patterns. <br><br>
+                    "Patterns", pertaining to this project, is just a sequence of numbers. <br><br>
+                    For example, if the design is meant to detect the pattern 1 -> 3 -> 5 and it receives three 1s on the next three rising clock edges, then there are three active patterns of 1 -> 3 -> 5. <br><br>
+                    Continuing with that example, if two 3s and two 5s are received by the design in no particular order in the next four rising edges, then there will be two completed patterns and one active pattern of 1 -> 3 -> 5. <br><br>
+                    GitHub repository <a href="https://github.com/josephmoreno/Coursework/tree/master/FPGA_Design/Vivado%20Projects/FPGA_FinalProject">here</a>.
+                </p>
+                
+                <p style="display: inline-block; font-size: 16pt;">Project Report (PDF)</p>
+                <button type="button" class="collapse_switch">Expand</button>
+                <div class="collapsible_content">
+                    <iframe src="./files/FPGA%20Final%20README.pdf" width="100%" height="925px"></iframe>
+                </div> <!-- collapsible_content end -->
+                
+            </div>
+            
+        </div> <!-- page_wrapper end -->
+        
+        <script type="text/javascript" src="./js/common.js"></script>
+    </body>
+</html>
