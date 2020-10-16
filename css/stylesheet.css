@@ -13,8 +13,7 @@ div#menu {
     width: 1125px;
     height: 45px;
     position: relative;
-    top: -180px;
-    left: 200px;
+    left: 100px;
 }
 
 #page_wrapper {
@@ -33,7 +32,7 @@ div#menu {
     height: 110px;
     padding: 0px 15px;
     border-radius: 10px;
-    top: 75px;
+    top: 50px;
     left: 800px;
     z-index: 1;
     
@@ -44,7 +43,7 @@ div#menu {
 
 #resume_body {
     position: relative;
-    top: -100px;
+    top: -157px;
 }
 /* --- End of IDs Section --- */
 
@@ -52,22 +51,22 @@ div#menu {
 .page_header {
     text-align: right;
     position: relative;
-    top: -175px;
-    right: 20px;
+    /*top: -175px;*/
+    right: 100px;
 }
 
 .page_subheader {
     text-align: right;
     position: relative;
-    top: -185px;
-    right: 20px;
+    /*top: -185px;*/
+    right: 100px;
 }
 
 .body_content {
     width: 1200px;
     height: 750px;
     position: relative;
-    top: 30px;
+    top: -25px;
     left: 62px;
 }
 
