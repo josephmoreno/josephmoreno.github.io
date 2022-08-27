@@ -96,6 +96,11 @@ p.section_title {
     font-weight: bold;
 }
 
+span.section_subtitle {
+    font-size: 18pt;
+    font-style: italic;
+}
+
 p.section_body {
     font-size: 16pt;
 }
