@@ -1,5 +1,5 @@
 import { Avatar, Drawer, List, Stack, Toolbar } from "@mui/material";
-import ColorConfigs from "../configs/ColorConfigs";
+import StyleConfigs from "../configs/StyleConfigs";
 import SizeConfigs from "../configs/SizeConfigs";
 import AppRoutes from "../routes/AppRoutes";
 import SidebarItem from "./SidebarItem";
@@ -16,9 +16,10 @@ const Sidebar = () => {
           width: SizeConfigs.sidebar.width,
           boxSizing: "border-box",
           borderRight: "0px",
-          backgroundColor: ColorConfigs.sidebar.bg,
-          color: ColorConfigs.sidebar.color
-        }
+          backgroundColor: StyleConfigs.sidebar.bg,
+          color: StyleConfigs.sidebar.color
+        },
+        fontFamily: StyleConfigs.sidebar.fontFamily
       }}
     >
       <List disablePadding>
