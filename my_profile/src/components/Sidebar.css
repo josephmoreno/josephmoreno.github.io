@@ -1,0 +1,8 @@
+.sidebar-selection-enter {
+    opacity: 0;
+}
+
+.sidebar-selection-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}

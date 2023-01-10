@@ -23,7 +23,11 @@ const DefaultLayout = () => {
               p: 3,
               width: `calc(100% - ${SizeConfigs.sidebar.width})`,
               minHeight: "100vh",
-              backgroundColor: StyleConfigs.mainBg
+              backgroundColor: StyleConfigs.mainBg,
+              // backgroundImage: StyleConfigs.bgImage,
+              // backgroundPosition: "center",
+              // backgroundRepeat: "no-repeat",
+              // backgroundSize: "cover",
             }}
           >
             {/* <Toolbar /> */}
