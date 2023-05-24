@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.144d5407.css",
-    "main.js": "/static/js/main.77c20376.js",
+    "main.js": "/static/js/main.0a0bca7d.js",
     "static/media/B.S. Diploma - Joseph Daniel Moreno.pdf": "/static/media/B.S. Diploma - Joseph Daniel Moreno.07b30fd9f8e29ce48b97.pdf",
+    "static/media/SDRAM Project Doc, Ver. 1.pdf": "/static/media/SDRAM Project Doc, Ver. 1.7587bd9e2172a676673d.pdf",
+    "static/media/SDRAM Project Doc, Ver. 2.pdf": "/static/media/SDRAM Project Doc, Ver. 2.2179d5ad18c2dd174b51.pdf",
     "static/media/dmc_2021.png": "/static/media/dmc_2021.02ee1269eaa6151cfccf.png",
     "static/media/Official PDF Transcript.pdf": "/static/media/Official PDF Transcript.b40f8a7134328235d552.pdf",
     "static/media/chip8_hidden.gif": "/static/media/chip8_hidden.c124f707ee946fe2fa3d.gif",
     "static/media/chip8_wipeoff.gif": "/static/media/chip8_wipeoff.5449662d6185b066cd6d.gif",
     "static/media/chip8_pong.gif": "/static/media/chip8_pong.1308545fd137820da5fe.gif",
     "static/media/chip8_brix.gif": "/static/media/chip8_brix.88df6056128451522e21.gif",
+    "static/media/tracking_system.png": "/static/media/tracking_system.24e8f629614ff9263b38.png",
     "static/media/bg0.png": "/static/media/bg0.6138c1aad20950a199a3.png",
     "index.html": "/index.html",
     "main.144d5407.css.map": "/static/css/main.144d5407.css.map",
-    "main.77c20376.js.map": "/static/js/main.77c20376.js.map"
+    "main.0a0bca7d.js.map": "/static/js/main.0a0bca7d.js.map"
   },
   "entrypoints": [
     "static/css/main.144d5407.css",
-    "static/js/main.77c20376.js"
+    "static/js/main.0a0bca7d.js"
   ]
 }
