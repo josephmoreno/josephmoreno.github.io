@@ -48,6 +48,8 @@ const Layout0 = (props: Layout0Props) => {
             props.drFunc(ind);
     }, [props]);
 
+    const nav_cards: React.ReactNode[] = navCards();
+
     return (
         <>
             {/* <Drawer
@@ -299,7 +301,7 @@ const Layout0 = (props: Layout0Props) => {
                         }
 
                         <Grid item display="flex">
-                            {navCards().map((card: React.ReactNode) => 
+                            {nav_cards.map((card: React.ReactNode) => 
                                 <Box paddingLeft="16px" width="128px">
                                     {card}
                                 </Box>

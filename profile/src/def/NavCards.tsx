@@ -5,6 +5,7 @@ import {
     CardActionArea,
     CardContent,
     Typography,
+    Box,
 } from '@mui/material';
 
 import Person from '@mui/icons-material/Person';
@@ -17,13 +18,15 @@ const NavCards = (): React.ReactNode[] => {
     return ([
         <>  
             <Card variant="elevation" elevation={24} onClick={() => nav("/")}>
-                <CardActionArea>
+                <CardActionArea style={{ backgroundColor: "#ffffff", }}>
                     <CardContent>
-                        <Person fontSize="large" />
+                        <Box>
+                            <Person fontSize="large" />
 
-                        <Typography variant="h5" component="div">
-                            Overview
-                        </Typography>
+                            <Typography variant="h5" component="div">
+                                Overview
+                            </Typography>
+                        </Box>
                     </CardContent>
                 </CardActionArea>
             </Card>
@@ -31,7 +34,7 @@ const NavCards = (): React.ReactNode[] => {
 
         <>  
             <Card variant="elevation" elevation={24} onClick={() => nav("/projects/")}>
-                <CardActionArea>
+                <CardActionArea style={{ backgroundColor: "#ffffff", }}>
                     <CardContent>
                         <Folder fontSize="large" />
 
@@ -45,7 +48,7 @@ const NavCards = (): React.ReactNode[] => {
 
         <>  
             <Card variant="elevation" elevation={24} onClick={() => nav("/timeline/")}>
-                <CardActionArea>
+                <CardActionArea style={{ backgroundColor: "#ffffff", }}>
                     <CardContent>
                         <Timeline fontSize="large" />
 

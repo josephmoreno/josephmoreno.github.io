@@ -11,6 +11,8 @@ import {
     Card,
     CardContent,
     Box,
+
+    CardActionArea,
 } from '@mui/material';
 
 import { useLocation } from 'react-router-dom';
@@ -62,8 +64,8 @@ const Projects = () => {
 
     return (
         <Layout0>
-            <Grid container spacing={4}>
-                <Grid item xs={6} ref={ref2}>
+            <Grid container spacing={4} zIndex={30}>
+                <Grid item xs={6} ref={ref2} zIndex="inherit">
                     <Card
                         variant="elevation"
                         elevation={24}
@@ -76,7 +78,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={6} alignSelf="center">
+                <Grid item xs={6} alignSelf="center" zIndex="inherit">
                     <Typography variant="h4" textAlign="left" fontWeight="bold">Tracking System, Web App Version</Typography>
                     <Typography variant="h6" textAlign="left">Jan. 2023 - Present </Typography>
 
@@ -90,7 +92,7 @@ const Projects = () => {
 
                 {/* === */}
 
-                <Grid item xs={6} alignSelf="center" justifyItems="right">
+                <Grid item xs={6} alignSelf="center" justifyItems="right" zIndex="inherit">
                     <Typography variant="h4" textAlign="left" fontWeight="bold">Tracking System, LabVIEW Version</Typography>
                     <Typography variant="h6" textAlign="left">Jan. 2022 - Present </Typography>
 
@@ -102,7 +104,7 @@ const Projects = () => {
                     <Typography variant="body1" textAlign="left">● Closure tables, tree data representation</Typography>
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item xs={6} zIndex="inherit">
                     <Card
                         variant="elevation"
                         elevation={24}
@@ -117,7 +119,7 @@ const Projects = () => {
 
                 {/* === */}
 
-                <Grid item xs={6} ref={ref0}>
+                <Grid item xs={6} ref={ref0} zIndex="inherit">
                     <Card
                         variant="elevation"
                         elevation={24}
@@ -130,7 +132,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={6} alignSelf="center">
+                <Grid item xs={6} alignSelf="center" zIndex="inherit">
                     <Typography variant="h4" textAlign="left" fontWeight="bold">Electronic Testing Automation</Typography>
                     <Typography variant="h6" textAlign="left">May 2021 - Dec. 2021 </Typography>
 
@@ -144,7 +146,7 @@ const Projects = () => {
 
                 {/* === */}
 
-                <Grid item xs={6} alignSelf="center" justifyItems="right" ref={ref1}>
+                <Grid item xs={6} alignSelf="center" justifyItems="right" ref={ref1} zIndex="inherit">
                     <Typography variant="h4" textAlign="left" fontWeight="bold">SDRAM Testing</Typography>
                     <Typography variant="h6" textAlign="left">Apr. 2021 - Oct. 2021 </Typography>
 
@@ -155,7 +157,7 @@ const Projects = () => {
                     <Typography variant="body1" textAlign="left">● Upper-level LabVIEW program, signals controller and logs pass/fails</Typography>
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item xs={6} zIndex="inherit">
                     <Card
                         variant="elevation"
                         elevation={24}
@@ -175,7 +177,7 @@ const Projects = () => {
 
                 {/* === */}
 
-                <Grid item xs={6} ref={ref3}>
+                <Grid item xs={6} ref={ref3} zIndex="inherit">
                     <Card
                         variant="elevation"
                         elevation={24}
@@ -191,7 +193,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={6} alignSelf="center">
+                <Grid item xs={6} alignSelf="center" zIndex="inherit">
                     <Typography variant="h4" textAlign="left" fontWeight="bold">Chip8 Emulator</Typography>
                     <Typography variant="h6" textAlign="left">May 2020 - Jun. 2020 </Typography>
 
