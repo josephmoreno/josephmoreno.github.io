@@ -41,6 +41,7 @@ import { MouseTooltip } from '../styled/styled';
 import diploma from "../files/B.S. Diploma - Joseph Daniel Moreno.pdf";
 import resume from "../files/2023-12-13 Resume.pdf";
 
+import dobot from '../img/dobot_demo.mp4';
 import sdram0 from "../img/sdram_proj_pic1.png";
 import chip8_wipeoff from "../img/chip8_wipeoff.gif";
 import dmc from "../img/dmc_2021_cropped0.png";
@@ -134,9 +135,11 @@ const Overview = () => {
                                     <MouseTooltip
                                         tt_body="Testing Automation"
                                         comp={
-                                            <video autoPlay muted loop style={{ maxWidth: "100%", borderRadius: "8px", }}>
-                                                <source src="https://dms.licdn.com/playlist/C5605AQF95HBwkpadUQ/mp4-640p-30fp-crf28/0/1640636159328?e=2147483647&amp;v=beta&amp;t=3OURk7lcdES4tAmC0NYRHTQ8obCrFSPtQcZ0P9vX_IU" type="video/mp4"/>
-                                            </video>
+                                            // <video autoPlay muted loop style={{ maxWidth: "100%", borderRadius: "8px", }}>
+                                            //     <source src="https://dms.licdn.com/playlist/C5605AQF95HBwkpadUQ/mp4-640p-30fp-crf28/0/1640636159328?e=2147483647&amp;v=beta&amp;t=3OURk7lcdES4tAmC0NYRHTQ8obCrFSPtQcZ0P9vX_IU" type="video/mp4"/>
+                                            // </video>
+
+                                            <video src={dobot} controls={false} autoPlay muted loop style={{ maxWidth: "100%", borderRadius: "4px", }} />
                                         }
                                     />
                                 </Box>
