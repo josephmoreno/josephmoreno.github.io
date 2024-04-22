@@ -20,6 +20,7 @@ import { useLocation } from 'react-router-dom';
 import Layout0 from '../layouts/Layout0';
 
 import ts from '../img/django-react ts.mp4';
+import dobot from '../img/dobot_demo.mp4';
 import c8_brix from "../img/chip8_brix_cropped0.gif";
 import c8_pong from "../img/chip8_pong_cropped0.gif";
 import c8_hidden from "../img/chip8_hidden_cropped0.gif";
@@ -127,7 +128,8 @@ const Projects = () => {
                         <CardContent sx={{
                             textAlign: "center",
                         }}>
-                            <video src="https://dms.licdn.com/playlist/C5605AQF95HBwkpadUQ/mp4-640p-30fp-crf28/0/1640636159328?e=2147483647&amp;v=beta&amp;t=3OURk7lcdES4tAmC0NYRHTQ8obCrFSPtQcZ0P9vX_IU" autoPlay muted loop style={{ maxWidth: "100%", borderRadius: "8px", }} />
+                            {/* <video src="https://dms.licdn.com/playlist/C5605AQF95HBwkpadUQ/mp4-640p-30fp-crf28/0/1640636159328?e=2147483647&amp;v=beta&amp;t=3OURk7lcdES4tAmC0NYRHTQ8obCrFSPtQcZ0P9vX_IU" autoPlay muted loop style={{ maxWidth: "100%", borderRadius: "8px", }} /> */}
+                            <video src={dobot} controls={false} autoPlay muted loop style={{ maxWidth: "100%", borderRadius: "4px", }} />
                         </CardContent>
                     </Card>
                 </Grid>
