@@ -11,8 +11,6 @@ import {
     Card,
     CardContent,
     Box,
-
-    CardActionArea,
 } from '@mui/material';
 
 import { useLocation } from 'react-router-dom';

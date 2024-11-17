@@ -16,15 +16,6 @@ import {
     Grid,
 } from '@mui/material';
 
-import {
-    MapContainer,
-    TileLayer,
-    Marker,
-    Popup,
-} from 'react-leaflet';
-
-import { CopyToClipboard as Ctc } from 'react-copy-to-clipboard';
-
 import ArrowUp from '@mui/icons-material/KeyboardArrowUp';
 import Person from '@mui/icons-material/Person';
 import Work from '@mui/icons-material/Work';
@@ -49,10 +40,10 @@ import fpga0 from "../img/fpga_final0.png";
 import ts from "../img/django-react_ts.gif";
 
 const Overview = () => {
-    const email: string = "joejetmoreno@gmail.com";
-    const phone_num: string = "(727) 741-9439";
-
     const nav = useNavigate();
+
+    const email: string = 'joejetmoreno@gmail.com';
+    const phone_num: string = '+17277419439'
 
     const dr_cont: any[] = useMemo(() => [{txt: "Summary", icon: <Person />, ref: React.createRef()}, {txt: "Experience", icon: <Work />, ref: React.createRef()}, {txt: "Resume & Degree", icon: <Files />, ref: React.createRef()}, {txt: "Contact", icon: <ContPg />, ref: React.createRef()}], []);
 
@@ -79,7 +70,7 @@ const Overview = () => {
                 <Box position="relative" top="50%" left="50%" sx={{ transform: 'translate(-50%, -50%)', }}>
                     <Box paddingBottom="16px">
                         <Typography variant="h3" fontWeight="bold">Joseph Daniel Moreno</Typography>
-                        <Typography variant="h4" fontWeight="bold">Computer / Software Engineer</Typography>
+                        <Typography variant="h4" fontWeight="bold">Computer Engineer / Programmer</Typography>
                     </Box>
 
                     <Typography variant="h6" fontStyle="italic">Full-Stack - Django-React, MySQL, nginx</Typography>
@@ -100,19 +91,14 @@ const Overview = () => {
                                 <CardContent sx={{
                                     textAlign: "left",
                                 }}>
-                                    <MapContainer center={[28.19722077077318, -82.62642597943416]} zoom={18} scrollWheelZoom={false} className="leaflet-map">
-                                        <TileLayer
-                                            // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                            // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                            url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
-                                        />
-                                        <Marker position={[28.19722077077318, -82.62642597943416]}>
-                                            <Popup>
-                                                Global ETS, LLC <br/><br/>
-                                                2631 Success Dr, Odessa, FL 33556
-                                            </Popup>
-                                        </Marker>
-                                    </MapContainer>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4267.216863810825!2d-82.63129214841226!3d28.197187313968683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2969f82120ea7%3A0xd6f38ed25b1186d!2sGlobal%20ETS%2C%20LLC!5e1!3m2!1sen!2sus!4v1731789617350!5m2!1sen!2sus"
+                                        width='100%'
+                                        height='300px'
+                                        style={{ border: 0, }}
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                    />
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -247,37 +233,33 @@ const Overview = () => {
             <Box height="100vh" ref={dr_cont[3]['ref']}>
                 <Box position="relative" top="50%" left="50%" sx={{ transform: 'translate(-50%, -50%)', }}>
                     <Box display="flex" justifyContent="center">
-                        <Ctc text={email}>
-                            <Box>
-                                <MouseTooltip
-                                    tt_body="Copy to Clipboard"
-                                    comp={
-                                        <IconButton>
-                                            <Email />
-                                        </IconButton>
-                                    }
-                                />
-                            </Box>
-                        </Ctc>
+                        <Box>
+                            <MouseTooltip
+                                tt_body="Copy to Clipboard"
+                                comp={
+                                    <IconButton onClick={() => navigator.clipboard.writeText(email)}>
+                                        <Email />
+                                    </IconButton>
+                                }
+                            />
+                        </Box>
 
                         <Box alignSelf="center">
-                            <Typography variant="h6" fontWeight="bold" paddingLeft="8px">joejetmoreno@gmail.com</Typography>
+                            <Typography variant="h6" fontWeight="bold" paddingLeft="8px">{email}</Typography>
                         </Box>
                     </Box>
 
                     <Box display="flex" justifyContent="center">
-                        <Ctc text={phone_num}>
-                            <Box>
-                                <MouseTooltip
-                                    tt_body="Copy to Clipboard"
-                                    comp={
-                                        <IconButton>
-                                            <Phone />
-                                        </IconButton>
-                                    }
-                                />
-                            </Box>
-                        </Ctc>
+                        <Box>
+                            <MouseTooltip
+                                tt_body="Copy to Clipboard"
+                                comp={
+                                    <IconButton onClick={() => navigator.clipboard.writeText(phone_num)}>
+                                        <Phone />
+                                    </IconButton>
+                                }
+                            />
+                        </Box>
 
                         <Box alignSelf="center">
                             <Typography variant="h6" fontWeight="bold" paddingLeft="8px">(727) 741-9439</Typography>

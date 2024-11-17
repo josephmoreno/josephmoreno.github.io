@@ -5,13 +5,6 @@ import {
     Typography,
 } from '@mui/material';
 
-import {
-    MapContainer,
-    TileLayer,
-    Marker,
-    Popup,
-} from 'react-leaflet';
-
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
@@ -26,7 +19,7 @@ import SchoolIcon from "@mui/icons-material/School";
 
 import old_ts from '../img/tracking_system.png';
 import dmc_2021 from '../img/dmc_2021.png';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 const TlObjs = () => {
     const ref0 = useRef(null);
@@ -48,19 +41,14 @@ const TlObjs = () => {
                                         <CardContent sx={{
                                             textAlign: "left",
                                         }}>
-                                            <MapContainer center={[5.29244, 100.28419]} zoom={15} scrollWheelZoom={false} className="leaflet-map">
-                                                <TileLayer
-                                                    // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                                    // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                                    url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
-                                                />
-                                                <Marker position={[5.29244, 100.28419]}>
-                                                    <Popup>
-                                                        Global ETS, Malaysia <br/><br/>
-                                                        Plot 88F, 2nd Floor, Lintang Bayan Lepas 10, Bayan Lepas Industrial Park, Bayan Lepas Free Industrial Zone Phase 4, 11900 Bayan Lepas, Penang, Malaysia
-                                                    </Popup>
-                                                </Marker>
-                                            </MapContainer>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4821.764367084832!2d100.43694614882155!3d5.215572081297973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ab10073b2cc89%3A0x7b604ba5babfe492!2sGlobal%20ETS%20(Malaysia)%20Sdn%20Bhd!5e1!3m2!1sen!2sus!4v1731788734087!5m2!1sen!2sus"
+                                                width='100%'
+                                                height='300px'
+                                                style={{ border: 0, }}
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                            />
 
                                             <br/>
 
@@ -111,19 +99,14 @@ const TlObjs = () => {
                                         <CardContent sx={{
                                             textAlign: "left",
                                         }}>
-                                            <MapContainer center={[38.98636, -76.95445]} zoom={15} scrollWheelZoom={false} className="leaflet-map">
-                                                <TileLayer
-                                                    // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                                    // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                                    url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
-                                                />
-                                                <Marker position={[38.98636, -76.95445]}>
-                                                    <Popup>
-                                                        College Park Marriott Hotel & Conference Center <br/><br/>
-                                                        3501 University Blvd E, Hyattsville, MD 20783
-                                                    </Popup>
-                                                </Marker>
-                                            </MapContainer>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.518973809117!2d-76.95703028786839!3d38.98635997158727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c68e463b290f%3A0xeb3f5603930ad3af!2s3501%20University%20Blvd%20E%2C%20Hyattsville%2C%20MD%2020783!5e1!3m2!1sen!2sus!4v1731789070988!5m2!1sen!2sus"
+                                                width='100%'
+                                                height='300px'
+                                                style={{ border: 0, }}
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                            />
 
                                             <br/>
 
@@ -231,19 +214,14 @@ const TlObjs = () => {
                                         <CardContent sx={{
                                             textAlign: "left",
                                         }}>
-                                            <MapContainer center={[39.81755, -104.75092]} zoom={15} scrollWheelZoom={false} className="leaflet-map">
-                                                <TileLayer
-                                                    // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                                    // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                                    url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
-                                                />
-                                                <Marker position={[39.81755, -104.75092]}>
-                                                    <Popup>
-                                                        Gaylord Rockies Resort & Convention Center <br/><br/>
-                                                        6700 N Gaylord Rockies Blvd, Aurora, CO 80019
-                                                    </Popup>
-                                                </Marker>
-                                            </MapContainer>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563.6190008185538!2d-104.75200487904047!3d39.817554747326525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c66789a1b53f3%3A0x73dc34741696a198!2s6700%20N%20Gaylord%20Rockies%20Blvd%2C%20Aurora%2C%20CO%2080019!5e1!3m2!1sen!2sus!4v1731789210037!5m2!1sen!2sus"
+                                                width='100%'
+                                                height='300px'
+                                                style={{ border: 0, }}
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                            />
 
                                             <br/>
 
@@ -302,19 +280,14 @@ const TlObjs = () => {
                                         <CardContent sx={{
                                             textAlign: "left",
                                         }}>
-                                            <MapContainer center={[28.05871, -82.41386]} zoom={15} scrollWheelZoom={false} className="leaflet-map">
-                                                <TileLayer
-                                                    // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                                    // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                                    url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
-                                                />
-                                                <Marker position={[28.05871, -82.41386]}>
-                                                    <Popup>
-                                                        University of South Florida, Tampa <br/><br/>
-                                                        4202 E Fowler Ave, Tampa, FL 33620
-                                                    </Popup>
-                                                </Marker>
-                                            </MapContainer>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.369027141949!2d-82.41512868807722!3d28.058601095741206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7b964528a09%3A0xf3875031bad2a0eb!2sDepartment%20of%20Computer%20Science%20and%20Engineering!5e1!3m2!1sen!2sus!4v1731789299054!5m2!1sen!2sus"
+                                                width='100%'
+                                                height='300px'
+                                                style={{ border: 0, }}
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                            />
 
                                             <br/>
 
