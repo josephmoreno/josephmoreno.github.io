@@ -1,4 +1,4 @@
-import { MantineProvider, DEFAULT_THEME } from '@mantine/core';
+import { MantineProvider, DEFAULT_THEME, } from '@mantine/core';
 
 import {
   BrowserRouter,
