@@ -9,7 +9,7 @@ import dr_ts from '../assets/img/django-react_ts.gif';
 import sdram from '../assets/img/sdram_proj_pic1.png';
 import diploma from '../assets/files/B.S. Diploma - Joseph Daniel Moreno.pdf';
 import resume from '../assets/files/2024-01-06 resume.pdf';
-import bg from '../assets/img/bg2.png';
+// import bg from '../assets/img/bg2.png';
 import line from '../assets/img/bg_line0.png';
 
 // const url = (name: string, wrap: boolean = false) =>
