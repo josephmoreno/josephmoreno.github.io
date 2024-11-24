@@ -20,7 +20,7 @@ const App = () => {
     <>
       {ver
         ? <OldApp />
-        : <MantineProvider theme={DEFAULT_THEME}>
+        : <MantineProvider theme={DEFAULT_THEME} defaultColorScheme='dark'>
             <div style={{ textAlign: 'center', }}>
               <Navbar />
 

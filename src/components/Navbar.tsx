@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { useDisclosure } from '@mantine/hooks';
 import useNavbar from '../stores/NavbarStore';
 import { Tooltip, UnstyledButton, Stack, Burger, Transition, rem } from '@mantine/core';
@@ -50,7 +49,6 @@ const translateX = {
 };
 
 const Navbar = () => {
-  // const [active, setActive] = useState(0);
   const [nav_open, { toggle: toggleNav }] = useDisclosure();
   const setNavInd = useNavbar((state: any) => state.setNavInd);
   const setOldVer = useNavbar((state: any) => state.setOldVer);
@@ -86,7 +84,6 @@ const Navbar = () => {
 
                     <Stack justify="center" gap={0}>
                         <NavbarLink icon={IconSwitchHorizontal} label="Old Version" onClick={() => { setOldVer(true); }} />
-                        {/* <NavbarLink icon={IconLogout} label="Logout" /> */}
                     </Stack>
                 </nav>
             )}

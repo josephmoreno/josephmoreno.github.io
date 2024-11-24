@@ -18,7 +18,7 @@ import useNavbar from '../../../stores/NavbarStore';
 
 const NavCards = (): React.ReactNode[] => {
     const nav = useNavigate();
-    const setOldVer = useNavbar((state: any) => state.setOldVer)
+    const setOldVer = useNavbar((state: any) => state.setOldVer);
 
     return ([
         <Mtt

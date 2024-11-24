@@ -40,9 +40,11 @@ const Overview = () => {
                     factor={pg_count}
                     style={{
                         // backgroundImage: url('stars', true),
-                        backgroundImage: `url(${bg})`,
-                        backgroundSize: 'contain',
-                        backgroundRepeat: 'repeat',
+                        // backgroundImage: `url(${bg})`,
+                        // backgroundSize: 'contain',
+                        // backgroundRepeat: 'repeat',
+
+                        backgroundColor: '#111111',
                     }}
                 />
 
