@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-import Chip8 from './emscripten/chip8.mjs';
+import Chip8 from './emscripten/chip8';
 
 const CanvasChip8 = ({ opened }: { opened: boolean }) => {
     const normalQuit = useRef<any>(null);
