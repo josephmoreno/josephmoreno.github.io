@@ -11,12 +11,13 @@ import diploma from '../assets/files/B.S. Diploma - Joseph Daniel Moreno.pdf';
 import resume from '../assets/files/2024-01-06 resume.pdf';
 // import bg from '../assets/img/bg2.png';
 import line from '../assets/img/bg_line0.png';
+import CardChip8 from '../components/CardChip8';
 
 // const url = (name: string, wrap: boolean = false) =>
 //     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
 const Overview = () => {
-    const pg_count: number = 4;
+    const pg_count: number = 5;
 
     const parallax = useRef<IParallax>(null!);
     const nav_ind: number = useNavbar((state: any) => state.nav_ind);
@@ -120,7 +121,19 @@ const Overview = () => {
                     <img src={sdram} style={{ width: '480px', marginLeft: '70%', borderRadius: '16px', }} />
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2} speed={0.05}>
+                <ParallaxLayer
+                    offset={2}
+                    speed={0.05}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}
+                >
+                    <CardChip8 />
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={3} speed={0.05}>
                     <Switch
                         pos='absolute'
                         top='15px'
@@ -148,7 +161,7 @@ const Overview = () => {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={3}
+                    offset={4}
                     speed={0.05}
                     style={{
                         display: 'flex',

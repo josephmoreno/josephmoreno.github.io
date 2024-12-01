@@ -5,7 +5,7 @@ import { Tooltip, UnstyledButton, Stack, Burger, Transition, rem } from '@mantin
 import {
     IconUser,
     IconBriefcase2,
-    // IconBriefcase,
+    IconBriefcase,
     IconFiles,
     // IconTimeline,
     IconMail,
@@ -36,7 +36,7 @@ const NavbarLink = ({ icon: Icon, label, active, onClick }: NavbarLinkProps) => 
 const navbar_data = [
   { icon: IconUser, label: 'Summary' },
   { icon: IconBriefcase2, label: 'Experience', },
-  // { icon: IconBriefcase, label: 'Projects', },
+  { icon: IconBriefcase, label: 'Projects', },
   { icon: IconFiles, label: 'Resume & Degree', },
   // { icon: IconTimeline, label: 'Timeline', },
   { icon: IconMail, label: 'Contact', },
