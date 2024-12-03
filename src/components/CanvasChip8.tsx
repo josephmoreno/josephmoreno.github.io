@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 
+// -- @ts-ignore
 import Chip8 from './emscripten/chip8.mjs';
 
 const CanvasChip8 = ({ opened }: { opened: boolean }) => {
