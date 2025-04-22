@@ -22,7 +22,7 @@ const Experience = () => {
 
                     <Card shadow='xl' style={{ borderRadius: '16px', }}>
                         <Text size='38px' fw={700} style={{ textAlign: 'left', }}>Global ETS, LLC</Text>
-                        <Text size='22px' fw={600} style={{ textAlign: 'left', lineHeight: 2, }}>Software Engineer, Nov. 2020 - Present</Text>
+                        <Text size='22px' fw={600} style={{ textAlign: 'left', lineHeight: 2, }}>R&D Engineer / Software Developer, Nov. 2020 - Present</Text>
                         <Text size='18px' fw={500} fs='italic' style={{ textAlign: 'left', lineHeight: 1.2, }}>Skills Used</Text>
                         
                         <Text size='18px' fw={400} style={{ textAlign: 'left', lineHeight: 1.2, }}>
