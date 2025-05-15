@@ -8,7 +8,7 @@ import dobot from '../assets/img/dobot_demo.mp4';
 import dr_ts from '../assets/img/django-react_ts.gif';
 import sdram from '../assets/img/sdram_proj_pic1.png';
 import diploma from '../assets/files/B.S. Diploma - Joseph Daniel Moreno.pdf';
-import resume from '../assets/files/2025-03-28 resume.pdf';
+import resume from '../assets/files/2025-05-15 resume.pdf';
 // import bg from '../assets/img/bg2.png';
 import line from '../assets/img/bg_line0.png';
 import CardChip8 from '../components/CardChip8';
