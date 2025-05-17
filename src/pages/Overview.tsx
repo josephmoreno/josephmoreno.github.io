@@ -12,6 +12,7 @@ import resume from '../assets/files/2025-05-15 resume.pdf';
 // import bg from '../assets/img/bg2.png';
 import line from '../assets/img/bg_line0.png';
 import CardChip8 from '../components/CardChip8';
+import CardDragDropPic from '../components/CardDragDropPic';
 
 // const url = (name: string, wrap: boolean = false) =>
 //     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -131,6 +132,7 @@ const Overview = () => {
                     }}
                 >
                     <CardChip8 />
+                    <CardDragDropPic marLeftPer={2} />
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={3} speed={0.05}>
