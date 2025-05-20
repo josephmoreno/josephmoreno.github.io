@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Loader } from '@mantine/core';
 
 // -- @ts-ignore
-import Chip8 from './emscripten/chip8.mjs';
+import Chip8 from './emscripten/Chip-8/chip8.mjs';
 
 const CanvasChip8 = ({ opened }: { opened: boolean }) => {
     const normalQuit = useRef<any>(null);

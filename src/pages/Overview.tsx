@@ -2,7 +2,7 @@ import { useRef, useEffect, useState, useCallback } from 'react';
 import useNavbar from '../stores/NavbarStore';
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { Text, Switch, Box, } from '@mantine/core';
-import { IconDeviceMobile, IconMail } from '@tabler/icons-react';
+import { IconDeviceMobile, IconMail, } from '@tabler/icons-react';
 import Experience from '../components/Experience';
 import dobot from '../assets/img/dobot_demo.mp4';
 import dr_ts from '../assets/img/django-react_ts.gif';
@@ -12,6 +12,7 @@ import resume from '../assets/files/2025-05-15 resume.pdf';
 // import bg from '../assets/img/bg2.png';
 import line from '../assets/img/bg_line0.png';
 import CardChip8 from '../components/CardChip8';
+import CardTbGame0 from '../components/CardTbGame0';
 import CardDragDropPic from '../components/CardDragDropPic';
 
 // const url = (name: string, wrap: boolean = false) =>
@@ -132,6 +133,7 @@ const Overview = () => {
                     }}
                 >
                     <CardChip8 />
+                    <CardTbGame0 marLeftPer={2} />
                     <CardDragDropPic marLeftPer={2} />
                 </ParallaxLayer>
 

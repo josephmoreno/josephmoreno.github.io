@@ -1,1 +1,0 @@
-export default './chip8.mjs' as any;

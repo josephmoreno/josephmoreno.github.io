@@ -1,0 +1,1 @@
+export default './tile_based_game0.mjs' as any;

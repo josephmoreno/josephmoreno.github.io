@@ -1,5 +1,6 @@
-import { Card, Image, Text, Button, Group, Modal, } from '@mantine/core';
+import { Card, Image, Text, Button, Group, Modal, Tooltip, Box, } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { IconHelpOctagonFilled } from '@tabler/icons-react';
 
 import CanvasChip8 from './CanvasChip8';
 
@@ -13,18 +14,30 @@ const CardChip8 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) 
             <Modal
                 opened={opened}
                 onClose={close}
-                title="Chip-8 Emulator / BRIX" size='680px'
+                title={
+                    <Box display="flex">
+                        <Text size="sm" fw={600} style={{ alignSelf: "center", paddingRight: "8px", }}>Chip-8 Emulator / BRIX</Text>
+
+                        <Tooltip
+                            label={
+                                <Text size='sm' fw={600} style={{ alignSelf: "center", }}>Q = Left, E = Right, P = Play/Pause Music</Text>
+                            }
+                            defaultOpened
+                            closeDelay={250}
+                        >
+                            <IconHelpOctagonFilled />
+                        </Tooltip>
+                    </Box>}
+                size='680px'
             >
-                <Text size='sm' fw={600} style={{ paddingBottom: '4px', }}>Q = Left, E = Right, P = Play/Pause Music</Text>
                 <CanvasChip8 opened={opened} />
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" withBorder style={{ width: '300px', marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "300px", minHeight: "360px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <Image
                         src={brix}
                         height={160}
-                        alt="Norway"
                     />
                 </Card.Section>
 
@@ -38,7 +51,7 @@ const CardChip8 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) 
                     Ported to JavaScript and WebAssembly using emscripten.
                 </Text>
 
-                <Button color="blue" fullWidth mt="md" radius="md" onClick={open}>
+                <Button color="blue" mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" onClick={open}>
                     Try it out
                 </Button>
             </Card>
