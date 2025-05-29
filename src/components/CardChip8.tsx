@@ -16,11 +16,16 @@ const CardChip8 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) 
                 onClose={close}
                 title={
                     <Box display="flex">
-                        <Text size="sm" fw={600} style={{ alignSelf: "center", paddingRight: "8px", }}>Chip-8 Emulator / BRIX</Text>
+                        <Text size="sm" fw={600} style={{ alignSelf: "center", paddingRight: "8px", }}>Chip-8 Emulator</Text>
 
                         <Tooltip
                             label={
-                                <Text size='sm' fw={600} style={{ alignSelf: "center", }}>Q = Left, E = Right, P = Play/Pause Music</Text>
+                                <>
+                                    <Text size='sm' fw={600} style={{ alignSelf: "center", }}>Use mouse to select game</Text>
+                                    <Text size='sm' fw={600} style={{ alignSelf: "center", }}>16 keys for input: 1234-QWER-ASDF-ZXCV</Text>
+                                    <Text size='sm' fw={600} style={{ alignSelf: "center", }}>M = Back to Game Selection Menu</Text>
+                                    <Text size='sm' fw={600} style={{ alignSelf: "center", }}>P = Play/Pause Music</Text>
+                                </>
                             }
                             defaultOpened
                             closeDelay={250}
