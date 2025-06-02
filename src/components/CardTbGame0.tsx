@@ -22,7 +22,7 @@ const CardTbGame0 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }
                             label={
                                 <Box>
                                     <Text size='sm' fw={600} style={{ alignSelf: "center", }}>WASD controls, play/stop music button in top-left</Text>
-                                    <Text size='sm' fw={600} style={{ alignSelf: "center", }}>WIP - collision is unstable right now so the collision boxes are visible for now</Text>
+                                    <Text size='sm' fw={600} style={{ alignSelf: "center", }}>WIP - collision is unstable so the collision boxes are visible for now</Text>
                                 </Box>
                             }
                             defaultOpened

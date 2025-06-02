@@ -33,7 +33,7 @@ const Experience = () => {
                         <Text size='18px' fw={400} ta='left' lh={1.2}>
                             {'● Automated electronic testing using LabVIEW (QMH and actor framework) and VHDL.'} <br />
                             {'● Web app development; Django-React, deployed on AWS EC2 instance.'} <br />
-                            {'● Beginner circuit design; designs sent out for PCB fabrication.'} <br />
+                            {'● 8086, 8088 architecture processor research'} <br />
                         </Text>
                     </Card>
                 </Stack>

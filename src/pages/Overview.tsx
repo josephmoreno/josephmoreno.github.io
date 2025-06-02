@@ -8,12 +8,13 @@ import dobot from '../assets/img/dobot_demo.mp4';
 import dr_ts from '../assets/img/django-react_ts.gif';
 import sdram from '../assets/img/sdram_proj_pic1.png';
 import diploma from '../assets/files/B.S. Diploma - Joseph Daniel Moreno.pdf';
-import resume from '../assets/files/2025-05-15 resume.pdf';
+import resume from '../assets/files/2025-06-02 resume.pdf';
 // import bg from '../assets/img/bg2.png';
 import line from '../assets/img/bg_line0.png';
 import CardChip8 from '../components/CardChip8';
 import CardTbGame0 from '../components/CardTbGame0';
 import CardDragDropPic from '../components/CardDragDropPic';
+import CardSdramTester from '../components/CardSdramTester';
 
 // const url = (name: string, wrap: boolean = false) =>
 //     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -135,6 +136,7 @@ const Overview = () => {
                     <CardChip8 />
                     <CardTbGame0 marLeftPer={2} />
                     <CardDragDropPic marLeftPer={2} />
+                    <CardSdramTester marLeftPer={2} />
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={3} speed={0.05}>
