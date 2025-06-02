@@ -44,7 +44,7 @@ const CardSdramTester = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer:
                 </Text>
 
                 <Button color="blue" fullWidth mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" onClick={open}>
-                    View Doc
+                    View doc
                 </Button>
             </Card>
         </>
