@@ -2,11 +2,11 @@ import { Card, Image, Text, Button, Group, Modal, Box, Tooltip } from '@mantine/
 import { useDisclosure } from '@mantine/hooks';
 import { IconHelpOctagonFilled } from '@tabler/icons-react';
 
-import CanvasTbGame0 from './CanvasTbGame0';
+import CanvasTbGame0 from '../prev_ver/ver2/components/CanvasTbGame0';
 
-import numbo from '../assets/img/numbo_walking.gif';
+import numbo from '../prev_ver/ver2/assets/img/numbo_walking.gif';
 
-const CardTbGame0 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) => {
+const CardTbGame0 = ({ disabled, marLeftPer }: { disabled?: boolean, marLeftPer?: number } = { disabled: false, marLeftPer: 0 }) => {
     const [opened, {open, close}] = useDisclosure(false);
 
     return (
@@ -40,7 +40,7 @@ const CardTbGame0 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }
                 <CanvasTbGame0 opened={opened} />
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "300px", minHeight: "360px", marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <Image
                         src={numbo}
@@ -59,8 +59,8 @@ const CardTbGame0 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }
                     No actual game or concrete concept yet.
                 </Text>
 
-                <Button color="blue" fullWidth mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" onClick={open}>
-                    Try it out
+                <Button color="blue" fullWidth mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" disabled={disabled} onClick={open}>
+                    {disabled ? "Desktop-Only Demo" : "Try it out"}
                 </Button>
             </Card>
         </>

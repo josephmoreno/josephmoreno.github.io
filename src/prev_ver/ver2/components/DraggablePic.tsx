@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import { useSpring, animated, to } from '@react-spring/web';
 import { useGesture } from '@use-gesture/react';
 
-import styles from './css/DraggablePic.module.css';
+import styles from '../../../components/css/DraggablePic.module.css';
 
 const wheel = (y: number) => {
     const scale_p: number = 1 - (y / 10000);

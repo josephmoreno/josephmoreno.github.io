@@ -1,34 +1,31 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
-import useNavbar from '../stores/NavbarStore';
+import useNavbar from '../../../stores/NavbarStore';
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { Text, Switch, Box, } from '@mantine/core';
 import { IconDeviceMobile, IconMail, } from '@tabler/icons-react';
 import Experience from '../components/Experience';
 import dobot from '../assets/img/dobot_demo.mp4';
-import dr_ts from '../assets/img/django-react_ts.gif';
-import sdram from '../assets/img/sdram_proj_pic1.png';
-import diploma from '../assets/files/B.S. Diploma - Joseph Daniel Moreno.pdf';
-import resume from '../assets/files/2025-06-02 resume.pdf';
-// import bg from '../assets/img/bg2.png';
+import dr_ts from '../../ver1/img/django-react_ts.gif';
+import sdram from '../../ver1/img/sdram_proj_pic1.png';
+import diploma from '../../../assets/files/B.S. Diploma - Joseph Daniel Moreno.pdf';
+import resume from '../../../assets/files/resume.pdf';
 import line from '../assets/img/bg_line0.png';
-import CardChip8 from '../components/CardChip8';
-import CardTbGame0 from '../components/CardTbGame0';
-import CardDragDropPic from '../components/CardDragDropPic';
-import CardSdramTester from '../components/CardSdramTester';
-
-// const url = (name: string, wrap: boolean = false) =>
-//     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+import CardChip8 from '../../../components/CardChip8';
+import CardTbGame0 from '../../../components/CardTbGame0';
+import CardDragDropPic from '../../../components/CardDragDropPic';
+import CardSdramTester from '../../../components/CardSdramTester';
 
 const Overview = () => {
     const pg_count: number = 5;
 
     const parallax = useRef<IParallax>(null!);
     const nav_ind: number = useNavbar((state: any) => state.nav_ind);
+    const nav_trig: boolean = useNavbar((state: any) => state.nav_trig);
     const [pdf, setPdf] = useState<any>(diploma);
 
     useEffect(() => {
         parallax.current.scrollTo(nav_ind);
-    }, [nav_ind]);
+    }, [nav_trig]);
 
     const hPdfSwitch = useCallback((checked: boolean) => {
         setPdf(checked ? resume : diploma);
@@ -175,14 +172,9 @@ const Overview = () => {
                         justifyContent: 'center',
                     }}
                 >
-                    <Box>    
-                        <Box display='flex' style={{ alignItems: 'center', }}>
-                            <IconDeviceMobile size='50' style={{ paddingRight: '8px', }} /> <Text size='24px' fw={700}>{'(727) 741-9439'}</Text>
-                        </Box>
-
-                        <Box display='flex' style={{ alignItems: 'center', }}>
-                            <IconMail size='50' style={{ paddingRight: '8px', }} /> <Text size='24px' fw={700}>joejetmoreno@gmail.com</Text>
-                        </Box>
+                    <Box>
+                        <a href="tel:+17277419439" style={{ display: "flex", alignItems: "center", textDecoration: "none", }}><IconDeviceMobile size='50' style={{ paddingRight: '8px', }} /> <Text size='24px' fw={700}>{'(727) 741-9439'}</Text></a>
+                        <a href="mailto:joejetmoreno@gmail.com" style={{ display: "flex", alignItems: "center", textDecoration: "none", }}><IconMail size='50' style={{ paddingRight: '8px', }} /> <Text size='24px' fw={700}>joejetmoreno@gmail.com</Text></a>
                     </Box>
                 </ParallaxLayer>
             </Parallax>

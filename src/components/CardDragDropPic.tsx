@@ -2,9 +2,9 @@ import { Card, Text, Button, Group, Modal, Box, Tooltip, } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconHelpOctagonFilled } from '@tabler/icons-react';
 
-import DragDropPic from './DragDropPic';
+import DragDropPic from '../prev_ver/ver2/components/DragDropPic';
 
-import drag_drop_demo from '../assets/img/drag_drop_demo.mov';
+import drag_drop_demo from '../prev_ver/ver2/assets/img/drag_drop_demo.mov';
 
 const CardDragDropPic = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) => {
     const [opened, {open, close}] = useDisclosure(false);
@@ -39,7 +39,7 @@ const CardDragDropPic = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer:
                 <DragDropPic />
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "300px", minHeight: "360px", marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <video
                         src={drag_drop_demo}

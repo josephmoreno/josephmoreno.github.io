@@ -1,0 +1,23 @@
+.container {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 52px;
+  background: #222222;
+  border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  z-index: 99;
+}
+
+.burger {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 101;
+}
+
+.link-group {
+  position: fixed;
+  right: 0px;
+  top: 2px;
+  z-index: 100; 
+}

@@ -1,46 +1,11 @@
 import { useDisclosure } from '@mantine/hooks';
+import { Stack, Burger, Transition, Select, rem } from '@mantine/core';
 import useNavbar from '../stores/NavbarStore';
-import { Tooltip, UnstyledButton, Stack, Burger, Transition, rem } from '@mantine/core';
+import NavbarLink, { navbar_data } from './NavbarLink';
 
-import {
-    IconUser,
-    IconBriefcase2,
-    IconBriefcase,
-    IconFiles,
-    // IconTimeline,
-    IconMail,
-
-    // IconLogout,
-    IconSwitchHorizontal,
-} from '@tabler/icons-react';
+import { IconSwitchHorizontal, } from '@tabler/icons-react';
 
 import classes from './css/Navbar.module.css';
-
-interface NavbarLinkProps {
-  icon: typeof IconUser;
-  label: string;
-  active?: boolean;
-  onClick?(): void;
-}
-
-const NavbarLink = ({ icon: Icon, label, active, onClick }: NavbarLinkProps) => {
-  return (
-    <Tooltip label={label} position="right" transitionProps={{ duration: 0 }} zIndex={1029}>
-      <UnstyledButton onClick={onClick} className={classes.link} data-active={active || undefined}>
-        <Icon style={{ width: rem(20), height: rem(20) }} stroke={1.5} />
-      </UnstyledButton>
-    </Tooltip>
-  );
-};
-
-const navbar_data = [
-  { icon: IconUser, label: 'Summary' },
-  { icon: IconBriefcase2, label: 'Experience', },
-  { icon: IconBriefcase, label: 'Projects', },
-  { icon: IconFiles, label: 'Resume & Degree', },
-  // { icon: IconTimeline, label: 'Timeline', },
-  { icon: IconMail, label: 'Contact', },
-];
 
 const translateX = {
     in: { transform: 'translateX(0px)'},
@@ -50,8 +15,11 @@ const translateX = {
 
 const Navbar = () => {
   const [nav_open, { toggle: toggleNav }] = useDisclosure();
+  const nav_trig: boolean = useNavbar((state: any) => state.nav_trig);
+  const app_ver: number = useNavbar((state: any) => state.app_ver);
   const setNavInd = useNavbar((state: any) => state.setNavInd);
-  const setOldVer = useNavbar((state: any) => state.setOldVer);
+  const setNavTrig = useNavbar((state: any) => state.navTrig);
+  const setAppVer = useNavbar((state: any) => state.setAppVer);
 
   const links = navbar_data.map((link, ind) => (
     <NavbarLink
@@ -61,6 +29,7 @@ const Navbar = () => {
       onClick={() => { 
         // setActive(ind);
         setNavInd(ind);
+        setNavTrig(!nav_trig);
       }}
     />
   ));
@@ -75,7 +44,7 @@ const Navbar = () => {
             keepMounted
         >
             {(transition_style) => (
-                <nav className={classes.navbar} style={{ ...transition_style, height: "100vh" }}>
+                <nav className={classes.navbar} style={{ ...transition_style, }}>
                     <div className={classes.navbarMain}>
                         <Stack justify="center" gap={0}>
                           {links}
@@ -83,15 +52,27 @@ const Navbar = () => {
                     </div>
 
                     <Stack justify="center" gap={0}>
-                        <NavbarLink icon={IconSwitchHorizontal} label="Old Version" onClick={() => { setOldVer(true); }} />
+                        {/* <NavbarLink icon={IconSwitchHorizontal} label="Old Version" onClick={() => { setAppVer(1); }} /> */}
+
+                        <Select
+                          label="App Ver."
+                          data={["1", "2", "3"]}
+                          defaultValue={"" + app_ver}
+                          allowDeselect={false}
+                          withScrollArea={false}
+                          rightSectionWidth={0}
+                          comboboxProps={{
+                            position: "top",
+                            middlewares: { flip: false, shift: true, }
+                          }}
+                          onChange={(ver: string | null) => { if (ver !== null) setAppVer(+ver); }}
+                        />
                     </Stack>
                 </nav>
             )}
         </Transition>
 
-        <div style={{ position: 'absolute', top: '8px', left: '90px', zIndex: 1030, transition: 'all 0.2s ease', transform: (nav_open ? 'translateX(0px)' : `translateX(${rem('-80px')})`) }}>
-            <Burger opened={nav_open} onClick={toggleNav} size='sm' />
-        </div>
+        <Burger opened={nav_open} onClick={toggleNav} size='sm' pos="fixed" top="8px" left={rem('88px')} style={{ zIndex: 101, transition: 'all 0.2s ease', transform: (nav_open ? 'translateX(0px)' : `translateX(${rem('-80px')})`), }} />
     </>
   );
 }

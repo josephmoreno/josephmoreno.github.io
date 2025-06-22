@@ -1,11 +1,98 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
-.logo {
+.summary {
+  min-height: 100vh;
+  /* min-width: var(--min-width); */
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sect-title {
+  width: 100%;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+@media (min-width: calc(480px + 2rem)) {
+  .sect-title {
+    text-align: center;
+  }
+}
+
+.styled-box0 {
+  /* position: relative; */
+  /* background: #313131; */
+  background-image: linear-gradient(45deg, #434343, #323232, #212121);
+  /* min-height: 100vh; */
+  height: 100%;
+  /* min-width: var(--min-width); */
+  clip-path: polygon(0% 0%, 100% 10vw, 100% 100%, 0% calc(100% - 10vw));
+  padding: 10vw 1rem 10vw 1rem;
+  justify-items: center;
+  scroll-margin-top: 48px;
+}
+
+.styled-box1 {
+  /* position: relative; */
+  /* background: #313131; */
+  background-image: linear-gradient(45deg, #212121, #323232, #434343);
+  /* min-height: 100vh; */
+  height: 100%;
+  /* min-width: var(--min-width); */
+  clip-path: polygon(0% 10vw, 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+  padding: 10vw 1rem 10vw 1rem;
+  justify-items: center;
+  scroll-margin-top: 48px;
+}
+
+@keyframes appear-from-bottom0 {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+@keyframes appear-from-bottom1 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+@keyframes appear-from-bottom2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +126,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

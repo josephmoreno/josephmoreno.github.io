@@ -1,17 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { Loader } from '@mantine/core';
 
-// -- @ts-ignore
-import Chip8 from './emscripten/Chip-8/chip8.mjs';
+import TbGame0 from '../../../components/emscripten/Tile-Based Game 0/tile_based_game0.mjs';
 
-const CanvasChip8 = ({ opened }: { opened: boolean }) => {
+const CanvasTbGame0 = ({ opened }: { opened: boolean }) => {
     const normalQuit = useRef<any>(null);
     const [loading, setLoading] = useState<boolean>(false);
 
     useEffect(() => {
         setLoading(true);
 
-        Chip8({
+        TbGame0({
             canvas: (() => document.getElementById('canvas'))(),
             onRuntimeInitialized: (() => setLoading(false)),
         }).then((instance: any) => { normalQuit.current = instance.cwrap('normalQuit', null); }); // Under "Interacting with an API written in C/C++ from NodeJS" section: https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html#calling-compiled-c-functions-from-javascript-using-ccall-cwrap
@@ -41,4 +40,4 @@ const CanvasChip8 = ({ opened }: { opened: boolean }) => {
     );
 };
 
-export default CanvasChip8;
+export default CanvasTbGame0;

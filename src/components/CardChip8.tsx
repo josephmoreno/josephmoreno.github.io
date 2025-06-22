@@ -1,12 +1,12 @@
-import { Card, Image, Text, Button, Group, Modal, Tooltip, Box, } from '@mantine/core';
+import { Card, Image, Text, Button, Group, Modal, Box, Tooltip } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconHelpOctagonFilled } from '@tabler/icons-react';
 
-import CanvasChip8 from './CanvasChip8';
+import CanvasChip8 from '../prev_ver/ver2/components/CanvasChip8';
 
-import brix from '../old/src/img/chip8_brix.gif';
+import brix from '../prev_ver/ver1/img/chip8_brix.gif';
 
-const CardChip8 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) => {
+const CardChip8 = ({ disabled, marLeftPer }: { disabled?: boolean, marLeftPer?: number } = { disabled: false, marLeftPer: 0 }) => {
     const [opened, {open, close}] = useDisclosure(false);
 
     return (
@@ -38,7 +38,7 @@ const CardChip8 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) 
                 <CanvasChip8 opened={opened} />
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "300px", minHeight: "360px", marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <Image
                         src={brix}
@@ -56,8 +56,8 @@ const CardChip8 = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer: 0 }) 
                     Ported to JavaScript and WebAssembly using emscripten.
                 </Text>
 
-                <Button color="blue" mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" onClick={open}>
-                    Try it out
+                <Button color="blue" mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" disabled={disabled} onClick={open}>
+                    {disabled ? "Desktop-Only Demo" : "Try it out"}
                 </Button>
             </Card>
         </>
