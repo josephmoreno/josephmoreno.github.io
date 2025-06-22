@@ -89,7 +89,7 @@ const App3 = () => {
   }, [nav_trig]);
 
   return(
-    <MantineProvider theme={theme}>
+    <MantineProvider defaultColorScheme="dark" theme={theme}>
       {bp0 ? <Navheader /> : <Navbar />}
 
       <Flex className="summary" ref={refs[0]}>
