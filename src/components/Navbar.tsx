@@ -3,8 +3,6 @@ import { Stack, Burger, Transition, Select, rem } from '@mantine/core';
 import useNavbar from '../stores/NavbarStore';
 import NavbarLink, { navbar_data } from './NavbarLink';
 
-import { IconSwitchHorizontal, } from '@tabler/icons-react';
-
 import classes from './css/Navbar.module.css';
 
 const translateX = {
