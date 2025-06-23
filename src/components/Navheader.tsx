@@ -32,7 +32,7 @@ const Navheader = () => {
 
   return (
     <>
-        <Box className={classes.container}/>
+        <Box className={classes.container} style={{ transition: 'all 0.2s ease', transform: (opened ? 'translateY(0px)' : `translateY(${rem('-80px')})`), }} />
 
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
 
