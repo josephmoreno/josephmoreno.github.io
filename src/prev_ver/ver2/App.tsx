@@ -1,11 +1,5 @@
 import { MantineProvider, DEFAULT_THEME, } from '@mantine/core';
 
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
-
 import Overview from './pages/Overview';
 import Navbar from '../../components/Navbar';
 
@@ -24,12 +18,7 @@ export const App2 = () => {
     <MantineProvider theme={DEFAULT_THEME} defaultColorScheme='dark'>
       <div style={{ textAlign: 'center', }}>
         <Navbar />
-
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Overview />} />
-          </Routes>
-        </BrowserRouter>
+        <Overview />
       </div>
     </MantineProvider>
   );

@@ -32,7 +32,7 @@ const NavCards = (): React.ReactNode[] => {
                             <CardContent>
                                 <Select
                                     defaultValue={app_ver}
-                                    onChange={(e) => setAppVer(e.target.value)}
+                                    onChange={(e) => { setAppVer(e.target.value); nav("/"); }}
                                     autoWidth
                                     label="App Ver."
                                     size="small"

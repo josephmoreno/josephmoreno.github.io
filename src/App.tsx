@@ -129,7 +129,7 @@ const App3 = () => {
             </Box>
 
             <Box>
-              <Title order={3} fw={700} style={{ textAlign: "left", }}>Skills Used</Title>
+              <Title order={3} style={{ textAlign: "left", }}>Skills Used</Title>
               <Text fw={500} ta="left">Python, React, MySQL, SQLite, AWS (Linux EC2), nginx, LabVIEW, C++, C, VHDL, EasyEDA, FreeCAD</Text>
             </Box>
 
