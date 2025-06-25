@@ -15,7 +15,7 @@ import {
 
 import { useMediaQuery } from '@mantine/hooks';
 
-import { IconDeviceMobile, IconMail, } from '@tabler/icons-react';
+import { IconDeviceMobile, IconMail, IconBrandGithub } from '@tabler/icons-react';
 
 import Navbar from './components/Navbar';
 import Navheader from './components/Navheader';
@@ -191,6 +191,10 @@ const App3 = () => {
             
           <a href="mailto:joejetmoreno@gmail.com" style={{ display: "flex", alignItems: "center", textDecoration: "none", }}>
             <IconMail size='50' style={{ paddingRight: '8px', }} /> <Text size="1.3rem" fw={700}>joejetmoreno@gmail.com</Text>
+          </a>
+
+          <a href="https://github.com/josephmoreno" style={{ display: "flex", alignItems: "center", textDecoration: "none", }}>
+            <IconBrandGithub size='50' style={{ paddingRight: '8px', }} /> <Text size="1.3rem" fw={700}>My GitHub</Text>
           </a>
         </Box>
       </Box>
