@@ -1,6 +1,6 @@
 import { Card, Image, Text, Button, Group, Modal, Box, Tooltip } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconHelpOctagonFilled } from '@tabler/icons-react';
+import { IconHelpOctagonFilled, IconBrandGithub } from '@tabler/icons-react';
 
 import CanvasTbGame0 from '../prev_ver/ver2/components/CanvasTbGame0';
 
@@ -40,7 +40,7 @@ const CardTbGame0 = ({ disabled, marLeftPer }: { disabled?: boolean, marLeftPer?
                 <CanvasTbGame0 opened={opened} />
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", paddingBottom: "64px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <Image
                         src={numbo}
@@ -51,6 +51,9 @@ const CardTbGame0 = ({ disabled, marLeftPer }: { disabled?: boolean, marLeftPer?
 
                 <Group justify="space-between" mt="md" mb="xs">
                     <Text fw={500}>Tile-Based Game (WIP)</Text>
+                    <Tooltip label={<Text size='sm' fw={600} style={{ alignSelf: "center", }}>GitHub Repo</Text>}>
+                        <a href="https://github.com/josephmoreno/tile_based_game0" style={{ textDecoration: "none", display: "flex", alignContent: "center", }}><IconBrandGithub /></a>
+                    </Tooltip>
                 </Group>
 
                 <Text size="sm" c="dimmed">

@@ -1,6 +1,6 @@
 import { Card, Image, Text, Button, Group, Modal, Box, Tooltip } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconHelpOctagonFilled } from '@tabler/icons-react';
+import { IconHelpOctagonFilled, IconBrandGithub } from '@tabler/icons-react';
 
 import CanvasChip8 from '../prev_ver/ver2/components/CanvasChip8';
 
@@ -38,7 +38,7 @@ const CardChip8 = ({ disabled, marLeftPer }: { disabled?: boolean, marLeftPer?: 
                 <CanvasChip8 opened={opened} />
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", paddingBottom: "64px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <Image
                         src={brix}
@@ -48,6 +48,9 @@ const CardChip8 = ({ disabled, marLeftPer }: { disabled?: boolean, marLeftPer?: 
 
                 <Group justify="space-between" mt="md" mb="xs">
                     <Text fw={500}>Chip-8 Emulator</Text>
+                    <Tooltip label={<Text size='sm' fw={600} style={{ alignSelf: "center", }}>GitHub Repo</Text>}>
+                        <a href="https://github.com/josephmoreno/Chip-8_Emulator" style={{ textDecoration: "none", display: "flex", alignContent: "center", }}><IconBrandGithub /></a>
+                    </Tooltip>
                 </Group>
 
                 <Text size="sm" c="dimmed">

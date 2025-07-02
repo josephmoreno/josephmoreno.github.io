@@ -26,7 +26,7 @@ const CardSdramTester = ({ marLeftPer }: { marLeftPer?: number } = { marLeftPer:
                 </Box>
             </Modal>
 
-            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", marginLeft: (marLeftPer + '%'), }}>
+            <Card shadow="sm" padding="lg" radius="md" pos="relative" withBorder style={{ width: "calc(300px - 2rem)", minHeight: "376px", paddingBottom: "64px", marginLeft: (marLeftPer + '%'), }}>
                 <Card.Section>
                     <Image
                         src={sdram}
