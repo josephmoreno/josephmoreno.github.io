@@ -22,6 +22,7 @@ import Navheader from './components/Navheader';
 import useNavbar from './stores/NavbarStore';
 import ExpCarousel from './components/ExpCarousel';
 import ProjCarousel from './components/ProjCarousel';
+import CardGbaEmu from './components/CardGbaEmu';
 import CardChip8 from './components/CardChip8';
 import CardTbGame0 from './components/CardTbGame0';
 import CardDragDrop from './components/CardDragDropPic';
@@ -153,6 +154,7 @@ const App3 = () => {
           {bp1
             ? <ProjCarousel disabled={bp2} /> 
             : <Flex wrap="wrap" gap="sm">
+                <CardGbaEmu />
                 <CardChip8 disabled={bp2} />
                 <CardTbGame0 disabled={bp2} />
                 <CardDragDrop />

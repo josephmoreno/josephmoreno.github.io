@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';
 
+import CardGbaEmu from './CardGbaEmu';
 import CardChip8 from './CardChip8';
 import CardTbGame0 from './CardTbGame0';
 import CardDragDrop from './CardDragDropPic';
@@ -25,6 +26,10 @@ const ProjCarousel = ({ disabled }: { disabled?: boolean} = { disabled: false })
                 align: "center",
             }}
         >
+            <Carousel.Slide>
+                <CardGbaEmu />
+            </Carousel.Slide>
+
             <Carousel.Slide>
                 <CardChip8 disabled={disabled} />
             </Carousel.Slide>
