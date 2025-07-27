@@ -27,6 +27,8 @@ import CardChip8 from './components/CardChip8';
 import CardTbGame0 from './components/CardTbGame0';
 import CardDragDrop from './components/CardDragDropPic';
 import CardSdram from './components/CardSdramTester';
+import CardDobot from './components/CardDobot';
+import CardTs from './components/CardTs';
 
 import './App.css'
 import '@mantine/core/styles.css';
@@ -153,12 +155,14 @@ const App3 = () => {
 
           {bp1
             ? <ProjCarousel disabled={bp2} /> 
-            : <Flex wrap="wrap" gap="sm">
+            : <Flex wrap="wrap" gap="sm" justify="center">
                 <CardGbaEmu />
                 <CardChip8 disabled={bp2} />
                 <CardTbGame0 disabled={bp2} />
                 <CardDragDrop />
                 <CardSdram />
+                <CardDobot />
+                <CardTs />
               </Flex> 
           }
         </Box>

@@ -8,6 +8,8 @@ import CardChip8 from './CardChip8';
 import CardTbGame0 from './CardTbGame0';
 import CardDragDrop from './CardDragDropPic';
 import CardSdram from './CardSdramTester';
+import CardDobot from './CardDobot';
+import CardTs from './CardTs';
 
 const ProjCarousel = ({ disabled }: { disabled?: boolean} = { disabled: false }) => {
     const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false, }));
@@ -44,6 +46,14 @@ const ProjCarousel = ({ disabled }: { disabled?: boolean} = { disabled: false })
 
             <Carousel.Slide>
                 <CardSdram />
+            </Carousel.Slide>
+
+            <Carousel.Slide>
+                <CardDobot />
+            </Carousel.Slide>
+
+            <Carousel.Slide>
+                <CardTs />
             </Carousel.Slide>
         </Carousel>
     );
