@@ -57,6 +57,7 @@ const CardGbaEmu = ({ /*disabled,*/ marLeftPer }: { disabled?: boolean, marLeftP
                     Being developed in C++.
                     Currently coding out ARM7TDMI instructions.
                     SDL for handling keystroke input and audio-visual output.
+                    Catch2 for unit testing.
                 </Text>
 
                 <Button color="blue" mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" disabled={true} /*onClick={open}*/>
