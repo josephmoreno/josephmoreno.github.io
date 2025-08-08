@@ -24,10 +24,11 @@ import ExpCarousel from './components/ExpCarousel';
 import ProjCarousel from './components/ProjCarousel';
 import CardGbaEmu from './components/CardGbaEmu';
 import CardChip8 from './components/CardChip8';
-import CardTbGame0 from './components/CardTbGame0';
+// import CardTbGame0 from './components/CardTbGame0';
 import CardDragDrop from './components/CardDragDropPic';
 import CardSdram from './components/CardSdramTester';
 import CardDobot from './components/CardDobot';
+import CardCt from './components/CardCt';
 import CardTs from './components/CardTs';
 
 import './App.css'
@@ -139,8 +140,8 @@ const App3 = () => {
             <Box>
               <Text ta="left">
                 ● Automated electronic testing using LabVIEW (QMH and actor framework) and VHDL <br/>
-                ● Web app development; Django-React, deployed on AWS EC2 instance <br/>
-                ● 8086, 8088 architecture processor research
+                ● JTAG / boundary-scan testing bare FPGA chips. <br />
+                ● Web app full-stack development; Django-React, deployed on AWS EC2 instance.
               </Text>
             </Box>
 
@@ -158,10 +159,11 @@ const App3 = () => {
             : <Flex wrap="wrap" gap="sm" justify="center">
                 <CardGbaEmu />
                 <CardChip8 disabled={bp2} />
-                <CardTbGame0 disabled={bp2} />
+                {/* <CardTbGame0 disabled={bp2} /> */}
                 <CardDragDrop />
                 <CardSdram />
                 <CardDobot />
+                <CardCt />
                 <CardTs />
               </Flex> 
           }

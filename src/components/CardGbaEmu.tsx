@@ -61,7 +61,7 @@ const CardGbaEmu = ({ /*disabled,*/ marLeftPer }: { disabled?: boolean, marLeftP
                 </Text>
 
                 <Button color="blue" mt="md" radius="md" pos="absolute" bottom="16px" left="5%" w="90%" disabled={true} /*onClick={open}*/>
-                    WIP - Demo Not Ready
+                    WIP - Demo not ready
                 </Button>
             </Card>
         </>

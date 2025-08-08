@@ -5,10 +5,11 @@ import { Carousel } from '@mantine/carousel';
 
 import CardGbaEmu from './CardGbaEmu';
 import CardChip8 from './CardChip8';
-import CardTbGame0 from './CardTbGame0';
+// import CardTbGame0 from './CardTbGame0';
 import CardDragDrop from './CardDragDropPic';
 import CardSdram from './CardSdramTester';
 import CardDobot from './CardDobot';
+import CardCt from './CardCt';
 import CardTs from './CardTs';
 
 const ProjCarousel = ({ disabled }: { disabled?: boolean} = { disabled: false }) => {
@@ -36,9 +37,9 @@ const ProjCarousel = ({ disabled }: { disabled?: boolean} = { disabled: false })
                 <CardChip8 disabled={disabled} />
             </Carousel.Slide>
             
-            <Carousel.Slide>
+            {/* <Carousel.Slide>
                 <CardTbGame0 disabled={disabled} />
-            </Carousel.Slide>
+            </Carousel.Slide> */}
             
             <Carousel.Slide>
                 <CardDragDrop />
@@ -50,6 +51,10 @@ const ProjCarousel = ({ disabled }: { disabled?: boolean} = { disabled: false })
 
             <Carousel.Slide>
                 <CardDobot />
+            </Carousel.Slide>
+
+            <Carousel.Slide>
+                <CardCt />
             </Carousel.Slide>
 
             <Carousel.Slide>
