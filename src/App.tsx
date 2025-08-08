@@ -24,7 +24,7 @@ import ExpCarousel from './components/ExpCarousel';
 import ProjCarousel from './components/ProjCarousel';
 import CardGbaEmu from './components/CardGbaEmu';
 import CardChip8 from './components/CardChip8';
-// import CardTbGame0 from './components/CardTbGame0';
+import CardTbGame0 from './components/CardTbGame0';
 import CardDragDrop from './components/CardDragDropPic';
 import CardSdram from './components/CardSdramTester';
 import CardDobot from './components/CardDobot';
@@ -159,7 +159,7 @@ const App3 = () => {
             : <Flex wrap="wrap" gap="sm" justify="center">
                 <CardGbaEmu />
                 <CardChip8 disabled={bp2} />
-                {/* <CardTbGame0 disabled={bp2} /> */}
+                <CardTbGame0 disabled={bp2} />
                 <CardDragDrop />
                 <CardSdram />
                 <CardDobot />
